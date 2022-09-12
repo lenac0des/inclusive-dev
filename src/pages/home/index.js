@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react"
+import HeroImage from "./HeroImage.js"
+import NavBar from "./NavBar.js"
 
-const Home = () => {
+
+const HomeIndex = () => {
   return (
-    <div>Home</div>
+    <>
+      <NavBar/>
+      <HeroImage/>
+      
+      
+    </>
   )
 }
 
-export default Home
+export default HomeIndex
