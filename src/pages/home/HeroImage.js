@@ -1,21 +1,50 @@
-import React from 'react'
+import React, { useState, useEffect } from "react"
+import {HashLink} from "react-router-hash-link"
 import DisplayHomeImages from "./styles/DisplayHomeImages.js"
 import HeroImageWrapper from "./styles/HeroImageWrapper.js"
-
+import homeImage_communityPeople from "../../assets/homeImage_communityPeople.png"
 
 const HeroImage = () => {
+  const [moveImage, setMoveImage] = useState(false)
+  const [moveTextAndButton, setMoveTextAndButton] = useState(false)
+
+  useEffect(() => {
+    const timeImage = setTimeout(() => {
+      setMoveImage(true)
+    }, 500)
+    return () => {
+      return clearTimeout(timeImage)
+    }
+  }, [])
+
+  useEffect(() => {
+    const timeTextAndButton = setTimeout(() => {
+      setMoveTextAndButton(true)
+    }, 2000)
+
+    return () => {
+      return clearTimeout(timeTextAndButton)
+    }
+  }, [])
+
+  console.log("moveImage:", moveImage)
+  console.log("moveTextAndButton:", moveTextAndButton)
+
   return (
     <HeroImageWrapper>
-
       <DisplayHomeImages>
-        <div>
+        <div className={moveTextAndButton && "MoveTextAndButton"}>
           <h1>Inclusion for all.</h1>
-          <button>FIND OUT MORE</button>
+          <button > FIND OUT MORE </button>
         </div>
-        <span>Not from NYC?</span>
-
+        <img
+          src={homeImage_communityPeople}
+          alt="A group of people greetings with their hands"
+          className={moveImage && "MoveImage"}
+        />
       </DisplayHomeImages>
 
+      <span>Not from NYC?</span>
     </HeroImageWrapper>
   )
 }

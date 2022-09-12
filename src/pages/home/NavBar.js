@@ -11,7 +11,7 @@ const NavBar = () => {
           <li>Online Resource Guide</li>
           <li>Blog</li>
         </NavigationLinks>
-        <Login>Login</Login>
+        <Login>LOGIN</Login>
       </NavBarStyled>
   )
 }

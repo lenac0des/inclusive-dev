@@ -1,31 +1,76 @@
-import styled from "styled-components"
-import homeImage_communityPeople from "../../../assets/homeImage_communityPeople.png"
+import styled, { keyframes } from "styled-components"
 import homeImage_background from "../../../assets/homeImage_background.png"
 
+const fromBelow = keyframes`
+0%
+  {
+    transform:translateY(100vh)
+  }
+100%
+{
+  transform:translateY(0px);
+  opacity:1;
+}
+`
+
+const fromAbove = keyframes`
+0%
+  {
+    transform:translateY(-100vh);  
+  }
+100%
+{
+  
+  transform:translateY(0px);
+  opacity:1;
+}
+`
+
 const DisplayHomeImages = styled.div`
-  height: calc(100vh + 533px);
+  height: calc(100vh + 230px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-image: url(${homeImage_communityPeople}),
-    url(${homeImage_background});
-  background-position: center;
+  background-image: url(${homeImage_background});
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  /* border: 5px black solid; */
   position: relative;
-  text-align: center;
+
+  img {
+    margin-top: auto;
+    margin-bottom: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* border: 4px crimson solid; */
+    opacity: 0;
+  }
+
+  .MoveImage {
+    animation: 1s ${fromBelow} ease-out forwards;
+  }
+
+  .MoveTextAndButton {
+    animation: 1s ${fromAbove} ease-out forwards;
+    z-index: 99;
+  }
 
   div {
     position: absolute;
-    top: 15%;
+    top: 5%;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    h1{
+    /* border: 4px cornflowerblue solid; */
+    opacity: 0;
+
+    h1 {
       font-size: 16rem;
-      
     }
 
     button {
@@ -33,22 +78,16 @@ const DisplayHomeImages = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 11px 10px;
+      padding: 26px 16px;
       background-color: #000000;
       color: #ffffff;
+      font-weight: 700;
       border: 1px solid #000000;
       border-radius: 8px;
+
       cursor: pointer;
     }
-    
-    
   }
-  span{
-      position: absolute;
-      bottom: 7rem;
-      right:8rem;
-      cursor: pointer;
-    }
 `
 
 export default DisplayHomeImages

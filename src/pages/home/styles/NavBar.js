@@ -15,7 +15,6 @@ export const NavBarStyled = styled.nav`
   & > :nth-child(2) {
     margin-right: 74px;
   }
-  
 `
 
 export const Logo = styled.h2`
@@ -50,16 +49,24 @@ export const NavigationLinks = styled.ul`
 `
 
 export const Login = styled.button`
-  width: 76px;
-  height: 48px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 11px 16px;
-  background-color: #000000;
-  color: #ffffff;
+
+  width: 76px;
+  height: 36px;
+
+  background: #000000;
   border: 1px solid #000000;
   border-radius: 8px;
+
+  color: #ffffff;
+  
+  font-size: 14px;
+  font-weight: 600;
+
   margin-left: auto;
   margin-right: 63px;
   cursor: pointer;

@@ -4,7 +4,6 @@
 html {
   font-size: 8px;
 }
-
 h1 {
   font-size: 6rem;
 }
@@ -40,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #282c34; */
+  background-color: hsl(37.9, 65.5%, 94.3%);
   /* font-size: calc(10px + 1.2vmin); */
   color: black;
   font-family: "Lato", sans-serif;

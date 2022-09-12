@@ -1,0 +1,16 @@
+.MainContentProvisional{
+  height:100vh;
+  border: 4px crimson solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FooterProvisional{
+  height:100vh;
+  border: 4px cornflowerblue solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
