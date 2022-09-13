@@ -66,7 +66,6 @@ const DisplayHomeImages = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 4px cornflowerblue solid; */
     opacity: 0;
 
     h1 {
@@ -74,18 +73,34 @@ const DisplayHomeImages = styled.div`
     }
 
     button {
-      height: 48px;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 26px 16px;
-      background-color: #000000;
-      color: #ffffff;
-      font-weight: 700;
+      
+      height: 48px;
+      
+      padding: 26px 0px;
+      
+      background: #000000;
       border: 1px solid #000000;
       border-radius: 8px;
-
+      
+      color: #ffffff;
+      
+      font-weight: 700;
+      
       cursor: pointer;
+      
+    }
+
+    button > a {
+      all: unset;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 16px;
+      
     }
   }
 `

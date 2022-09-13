@@ -8,6 +8,10 @@ const HeroImageWrapper = styled.div`
     margin-left: auto;
     margin-right: 120px;
     cursor: pointer;
+    
+    a{
+      all:unset;
+    }
   }
 `
 

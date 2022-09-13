@@ -3,6 +3,7 @@ import {HashLink} from "react-router-hash-link"
 import DisplayHomeImages from "./styles/DisplayHomeImages.js"
 import HeroImageWrapper from "./styles/HeroImageWrapper.js"
 import homeImage_communityPeople from "../../assets/homeImage_communityPeople.png"
+import { Link } from "react-router-dom"
 
 const HeroImage = () => {
   const [moveImage, setMoveImage] = useState(false)
@@ -35,7 +36,7 @@ const HeroImage = () => {
       <DisplayHomeImages>
         <div className={moveTextAndButton && "MoveTextAndButton"}>
           <h1>Inclusion for all.</h1>
-          <button > FIND OUT MORE </button>
+          <button  > <HashLink to="#MainContent" smooth> FIND OUT MORE</HashLink> </button>
         </div>
         <img
           src={homeImage_communityPeople}
@@ -44,7 +45,7 @@ const HeroImage = () => {
         />
       </DisplayHomeImages>
 
-      <span>Not from NYC?</span>
+      <span><Link to="/work-in-progress">Not from NYC?</Link></span>
     </HeroImageWrapper>
   )
 }

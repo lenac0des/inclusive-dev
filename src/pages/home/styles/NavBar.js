@@ -1,11 +1,9 @@
 import styled from "styled-components"
 
 export const NavBarStyled = styled.nav`
-  /* outline: 1px white solid; */
   height: 99px;
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   color: #000000;
@@ -15,23 +13,30 @@ export const NavBarStyled = styled.nav`
   & > :nth-child(2) {
     margin-right: 74px;
   }
+
+  & > h2 > a,
+  & > ul > li > a,
+  & > button > a {
+    all: unset;
+  }
+  
+  & > button > a{
+    padding: 11px 16px;
+  }
 `
 
 export const Logo = styled.h2`
-  /* outline: 1px darkturquoise solid; */
   width: 252px;
   height: 69px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  /* margin-right: 74px; */
   margin-left: 70px;
   cursor: pointer;
 `
 
 export const NavigationLinks = styled.ul`
-  /* outline: 1px darkorange solid; */
   padding: 0;
   display: flex;
   height: 45px;
@@ -42,18 +47,15 @@ export const NavigationLinks = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* outline: 1px black solid; */
     cursor: pointer;
+
   }
 `
 
 export const Login = styled.button`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 11px 16px;
 
   width: 76px;
   height: 36px;
@@ -63,11 +65,15 @@ export const Login = styled.button`
   border-radius: 8px;
 
   color: #ffffff;
-  
+
   font-size: 14px;
   font-weight: 600;
 
   margin-left: auto;
   margin-right: 63px;
   cursor: pointer;
+  
+  
+  
+
 `

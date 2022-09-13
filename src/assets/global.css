@@ -1,8 +1,14 @@
-
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-size: 3rem;
+}
 
 /* Waiting for other devs to accept this idea from the dessign team. */
 html {
   font-size: 8px;
+  /* scroll-behavior: smooth; */
 }
 h1 {
   font-size: 6rem;
@@ -23,12 +29,7 @@ h6 {
   font-size: 1rem;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  font-size: 3rem;
-}
+
 
 body {
   margin: 0;
