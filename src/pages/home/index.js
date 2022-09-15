@@ -2,6 +2,7 @@ import React from "react"
 import HeroImage from "./HeroImage.js"
 import NavBar from "./NavBar.js"
 import "./Provisional.css"
+import Footer from './Footer.js'
 
 
 const HomeIndex = () => {
@@ -11,8 +12,8 @@ const HomeIndex = () => {
       <HeroImage/>
       
       <h2 className="MainContentProvisional" id="MainContent">Main Content</h2>
-      <div className="FooterProvisional">
-        <p>Footer</p>
+      <div>
+        <Footer />
       </div>
       
       
