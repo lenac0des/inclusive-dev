@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+/* import styled from 'styled-components'
+
 
 export const FooterStyled = styled.footer`
     height: 383px;
@@ -60,4 +61,4 @@ export const OrganizationLinks  = styled.ul`
 
 export const Icons = styled.links`
     
-`
+` */

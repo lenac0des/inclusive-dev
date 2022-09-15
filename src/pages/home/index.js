@@ -2,7 +2,9 @@ import React from "react"
 import HeroImage from "./HeroImage.js"
 import NavBar from "./NavBar.js"
 import "./Provisional.css"
-import Footer from './Footer.js'
+// import Footer from './Footer.js'
+import Main from './Main'
+
 
 
 const HomeIndex = () => {
@@ -11,9 +13,9 @@ const HomeIndex = () => {
       <NavBar/>
       <HeroImage/>
       
-      <h2 className="MainContentProvisional" id="MainContent">Main Content</h2>
+      <Main />
       <div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
       
       
