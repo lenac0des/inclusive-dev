@@ -1,77 +1,53 @@
-// import React from 'react'
-// import { Link } from 'react-react-dom'
-// import { FooterLogo, Icons, ResourceLinks, FooterStyled, TM, ForYouLinks, OrganizationLinks, IconText } from '.styles/Footer'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { FooterLogo, Icons, Title, FooterStyled, Column, IconText, Links, Row } from './styles/Footer'
+import { TwitterSvg, FacebookSvg, TiktokSvg, InstagramSvg } from '../../assets/IconIndex.js'
 
-// const Footer = () => {
-//     return (
-//     <FooterStyled>
-//         <FooterLogo>
-//             <Link to="/">IDD Life</Link>
-//         </FooterLogo>
-
-//         <ResourceLinks>
-//             <h4>Resources</h4>
-//             <li>
-//             <Link to="/work-in-progress">System Navigation Tool</Link>
-//             </li>
-
-//             <li>
-//             <Link to="/work-in-progress">Online Resource Guide</Link>
-//             </li>
-
-//             <li>
-//             <Link to="/work-in-progress">Blog</Link>
-//             </li>
-//         </ResourceLinks>
-
-//         <ForYouLinks>
-//             <h4>For You</h4>
-//             <li><Link to="/work-in-progress">Account</Link>
-//             </li>
-
-//             <li>
-//             <Link to="/work-in-progress">Newsletter</Link>
-//             </li>
-
-//             <li>
-//             <Link to="/work-in-progress">FAQ</Link>
-//             </li>
-//         </ForYouLinks>
-
-//         <OrganizationLinks>
-//             <h4>Organization</h4>
-
-//             <li><Link to="/work-in-progress">About Us</Link>
-//             </li>
-
-//             <li><Link to="/work-in-progress">Contact Us</Link></li>
-//         </OrganizationLinks>
-
-//         <Icons>
-//             <li>Twitter</li>
-//             <li>Instagram</li>
-//             <li>Facebook</li>
-//             <li>TikTok</li>
-
-//         </Icons>
+const Footer = () => {
+    return (
+    <FooterStyled>
+        <FooterLogo>
+         <h2>Inclusive</h2>
+        </FooterLogo>
+        <Row>
+        <Column>
+            <Title>Organization</Title>
+            <Links  to="/work-in-progress">About Us</Links>
+            <Links  to="/work-in-progress">Contact Us</Links>
+        </Column>
         
-//         <IconText> Connect With Us!</IconText>
+        <Column>
+            <Title>For You</Title>
+            <Links  to="/work-in-progress">Account</Links>
+            <Links  to="/work-in-progress">Newsletter</Links>
+            <Links  to="/work-in-progress">Blog</Links>
+        </Column>
 
-//         <TM>© 2022 The Inclusive Group</TM>
+        <Column>
+            <Title>Resources</Title>
+            <Links  to="/work-in-progress">Guide to Services</Links>
+            <Links  to="/work-in-progress"> Resource Directory</Links>
+            <Links  to="/work-in-progress">FAQ</Links>
+        </Column>
+        </Row>
 
+        <Icons>
+            <TwitterSvg />
+            <InstagramSvg />
+            <FacebookSvg />
+            <TiktokSvg />
 
-//     </FooterStyled>
-    
- 
-    
-    
-    
-    
-    
-//     )
-// }
+        </Icons>
 
-// export default Footer
+            <IconText> 
+                <h4>
+                Connect With Us!
+                </h4>
+            </IconText>
+ </FooterStyled>
 
+    )
+}
 
+export default Footer
 

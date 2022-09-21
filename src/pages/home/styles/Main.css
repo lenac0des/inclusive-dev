@@ -1,271 +1,86 @@
-.Title {
-    position: absolute;
-    width: 278px;
-    height: 38px;
-    left: 598px;
-    top: 1118px;
-    font-style: normal;
-    font-weight: 600;
+.S1 {
+    border: 1px solid pink;
+
+}
+
+
+.MainContainer {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.WhoWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    gap: 100px;
+}
+
+.Who {
     font-size: 34px;
     line-height: 48px;
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.01em;
-    color: #000000;
-
-} 
-
-
-.PTitle {
-    position: absolute;
-    width: 845px;
-    height: 22px;
-    left: 313px;
-    top: 1171px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
-}
-
-.P1 {
-    width: 367px;
-    height: 29px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.PP1 {
-    width: 367px;
-    height: 126px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
-    }
-
-
-.P2 {
-    width: 367px;
-    height: 29px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.PP2 { 
-width: 367px;
-height: 149px;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 32px;
-text-align: center;
-color: #000000;
-flex: none;
-order: 1;
-flex-grow: 0;
-}
-
-.P3 {
-    width: 419px;
-    height: 29px;
-    left: 950px;
-    top: 1609px;
-    bottom: 2000px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: left;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-    margin-left: auto;
-    margin-right: 120px;
-}
-
-
-.PP3 {
-    width: 366px;
-    height: 102px;
-    left: 972px;
-    top: 1649px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    color: #000000;
-    margin-left: auto;
-    margin-right: 120px;
-}
-
-.WhoSpace {
-    width: 1442px;
-    height: 2308px;
-    left: 0px;
-    top: 1023px
-}
-
-.Whoh {
     width: 244px;
     height: 46px;
-    left: 102px;
-    top: 2089px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 48px;
+    color: #000000;
+    top: 8px;
+}
+
+.WhoText {
+    font-size: 16px;
+    line-height: 32px;
+    width: 602px;
+    height: 192px;
+    color: #000000;
+    
+    flex: none;
+}
+
+.A1 {
+    left: 2;
+    right: 1;
+    top: 0;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+
+
+}
+
+.S2 {
+    border: 1px solid red;
+}
+
+.What {
     display: flex;
-    align-items: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-}
-
-.Whop {
-    width: 623px;
-    height: 184px;
-    left: 102px;
-    top: 2156px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    color: #000000;
-}
-
-.WhatSpace {
-    position: absolute;
-    width: 1442px;
-    height: 2308px;
-    left: 0px;
-    top: 1023px;
-}
-
-.Whath {
-    left: 50%;
-    right: 11%;
-    top: 70%;
-    bottom: 28%;
-    font-style: normal;
-    font-weight: 600;
+    justify-content: flex-end;
+    left: 100px;
+    height: 46px;
     font-size: 34px;
     line-height: 48px;
     letter-spacing: 0.01em;
-    color: #000000;
 }
 
-.Whatp {
-left: 48%;
-right: 7%;
-top: 71%;
-bottom: 25%;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 32px;
-color: #000000;
-}
-
-.News {
-    width: 590px;
-    height: 48px;
-    left: 411px;
-    top: 3068px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-}
-
-.Newp {
-    width: 270px;
-    height: 32px;
-    left: 571px;
-    top: 3126px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+.WhatText {
+    display: flex;
+    justify-content: flex-end;
     font-size: 16px;
     line-height: 32px;
-    text-align: center;
+
+}
+
+.A2 {
+    display: flex;
+    justify-content: flex-end; 
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
     color: #000000;
 }
 
-.PostWrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    gap: 20px;
-    justify-content: center;
-    padding-bottom: 60px;
-}
-
-
-
-button{
-    background:#FBF3E8;
-    color:#000000;
-    border:none;
-    position:relative;
-    height: 50px;
-    font-size:1.6em;
-    padding:0 2em;
-    cursor:pointer;
-    transition:800ms ease all;
-    border: 3px solid black;
-    border-radius: 8px;
-  }
-  button:hover{
-    background:#FBF3E8;
-    color:#000000;
-  }
-  button:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #FBF3E8;
-    transition:400ms ease all;
-  }
-  button:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  button:hover:before,button:hover:after{
-    width:100%;
-    transition:800ms ease all;
-  }
