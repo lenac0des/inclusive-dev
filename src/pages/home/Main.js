@@ -28,7 +28,16 @@ export default function Main() {
             </div>
 
         </section>
-
+        <section className="S3">
+            <div className="ThirdContainter">
+                <div className="ResWrapper">
+                    <div className="Resources">
+                        <h2 className="RTitle">Resources</h2>
+                        <p className="RText">Here are a few resources that you mind find helpful. Have a look around. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
