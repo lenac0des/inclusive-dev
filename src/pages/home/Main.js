@@ -26,8 +26,8 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-
         </section>
+
         <section className="S3">
             <div className="ThirdContainter">
                 <div className="ResWrapper">
@@ -38,6 +38,67 @@ export default function Main() {
                 </div>
             </div>
         </section>
+
+        <section className="S4">
+            <div className="CardContainer">
+                <div className="CardWrapper">
+
+                    <div>
+                        <div className="Card">
+                            <img className="Thumbnail1" src="../../assets/Landscape.png" />
+                            <div className="CardContent">
+                                <h3 classname="CardTitle1">Guide to Services</h3>
+                                <p className="CardText1">The Online Resource Guide (ORG) provides you with an easy-to-use directory of speech therapy providers, services, and local resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div>
+                        <div className="Card">
+                            <img className="Thumbnail2" src="../../assets/City.png" />
+                            <div className="CardContent">
+                                <h3 classname="CardTitle2">Resource Directory</h3>
+                                <p className="CardText2">The Inclusive navigation tool shows you the entire process, from request to service, and allows you to view each step in detail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div className="Card">
+                            <img className="Thumbnail3" src="../../assets/Nature.png" />
+                            <div className="CardContent">
+                                <h3 classname="CardTitle3">Online Portal</h3>
+                                <p className="CardText3">Join our online community to access and save resources, read reviews, and connect with local parents and professionals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="S5">
+            <div className="FourthContainer">
+                <div className="SubWrapper">
+                    <div className="Subscribe">
+                        <h2 className="SubTitle">Subscribe to Our Newsletter</h2>
+                        <p className="SubText">Become a part of our community and gain access to helpful resources.</p>
+
+                        <label className="EmailText">Enter Email Address </label>
+                        <input className="InputField" type="email" name="email" placeHolder="example@email.com" required/>
+                        <button className="SubButton">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
 
 
 
