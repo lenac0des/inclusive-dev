@@ -1,4 +1,5 @@
  import styled from 'styled-components'
+ 
 
 export const FooterStyled = styled.div`
    padding: 80px 60px;
@@ -62,7 +63,10 @@ margin-top: 8rem;
 
 
 export const IconText = styled.h4`
-    text-align: center;
+    display: flex;
+    position: relative;
+    bottom: 315px;
+    left: 600px;
     
 
 
@@ -75,18 +79,30 @@ export const FooterLogo = styled.h4`
     letter-spacing: 0.01em;
     margin-left: -5rem;
     margin-top: -5rem;
+    font-family: 'Poppins';
+    font-weight: 800;
 
 
 
 `
 
 export const Icons = styled.i`
-    font-size: 18px;
-    color: inherit;
-    display: inline-block;
-    text-align: center;
-    margin: 0 8px;
-    justify-content: space-between;
+    display: flex;
+    position: relative;
+    bottom: 290px;
+    left: 850px;
+    gap: 16px;
+    padding: 24px 0px 8px;
 
 
+`
+
+export const Caption = styled.h6`
+    display: flex;
+    position: relative;
+    top: 80px;
+    right: 50px;
+    line-height: 24px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
 `

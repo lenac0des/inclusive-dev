@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FooterLogo, Icons, Title, FooterStyled, Column, IconText, Links, Row } from './styles/Footer'
+import { FooterLogo, Icons, Title, FooterStyled, Column, IconText, Links, Row, Caption } from './styles/Footer'
 import { TwitterSvg, FacebookSvg, TiktokSvg, InstagramSvg } from '../../assets/IconIndex.js'
 
 const Footer = () => {
@@ -44,6 +44,9 @@ const Footer = () => {
                 Connect With Us!
                 </h4>
             </IconText>
+            <Caption>
+                <h6> © 2022 The Inclusive Group</h6>
+            </Caption>
  </FooterStyled>
 
     )

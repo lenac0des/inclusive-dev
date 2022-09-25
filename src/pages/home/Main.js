@@ -1,15 +1,22 @@
 import React from 'react'
 
 import './styles/Main.css'
+import Landscape from '../../../src/assets/Landscape.png'
+import Nature from '../../../src/assets/Nature.png'
+import City from '../../../src/assets/City.png'
+import Building from '../../../src/assets/building.png'
+import Land from '../../../src/assets/Land.png'
 
 export default function Main() {
     return (
-        <section className="S1">
-            <div className="MainContainer">
+        <section className="MainContainer">
+            <div className="S1">
                 <div className="WhoWrapper">
+                    <img src={Building} />
                     <div className="WhoWeAre">
                         <h2 className="Who">Who We Are</h2>
                         <p className="WhoText">Inclusive is a non-profit human services organization and social enterprise in NYC that serves individuals with I/DDs (Intellectual and/or Developmental Disabilities). We specialize in providing services to parents of children whose language development has been impeded by severe physical impairments, life-changing medical conditions, traumatic brain injuries, and many other factors.</p>
+                        
                         <a href="#" className="A1">Learn More</a>  
                     </div>
                 </div>
@@ -19,7 +26,9 @@ export default function Main() {
         <section className="S2">
             <div className="SecondContainer">
                 <div className="WhatWrapper">
+                <img src={Land} />
                     <div className="WhatWeAre">
+    
                         <h2 className="What">What We Do</h2>
                         <p className="WhatText">Outreach, workshops and training, and live phone support are a few ways Inclusive assists those with I/DD.</p>
                         <a href="#" className="A2">Learn More</a>
@@ -45,7 +54,7 @@ export default function Main() {
 
                     <div>
                         <div className="Card">
-                            <img className="Thumbnail1" src="../../assets/Landscape.png" />
+                            <img className="Thumbnail1" src={Landscape} />
                             <div className="CardContent">
                                 <h3 classname="CardTitle1">Guide to Services</h3>
                                 <p className="CardText1">The Online Resource Guide (ORG) provides you with an easy-to-use directory of speech therapy providers, services, and local resources.</p>
@@ -56,7 +65,7 @@ export default function Main() {
 
                     <div>
                         <div className="Card">
-                            <img className="Thumbnail2" src="../../assets/City.png" />
+                            <img className="Thumbnail2" src={City} />
                             <div className="CardContent">
                                 <h3 classname="CardTitle2">Resource Directory</h3>
                                 <p className="CardText2">The Inclusive navigation tool shows you the entire process, from request to service, and allows you to view each step in detail.</p>
@@ -67,7 +76,7 @@ export default function Main() {
 
                     <div>
                         <div className="Card">
-                            <img className="Thumbnail3" src="../../assets/Nature.png" />
+                            <img className="Thumbnail3" src={Nature} />
                             <div className="CardContent">
                                 <h3 classname="CardTitle3">Online Portal</h3>
                                 <p className="CardText3">Join our online community to access and save resources, read reviews, and connect with local parents and professionals.</p>
